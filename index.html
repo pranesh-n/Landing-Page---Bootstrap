@@ -761,16 +761,26 @@
         </script>
         <!-- End Meta Pixel Code -->
 
-        <!-- Google Tag Manager -->
-        <script defer async>(function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: 'gtm.js'
-                }); var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.defer = true; j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-PWZTCDZ');</script>
-        <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics (UA-110506170-1) + Adwords (AW-752255838) -->
+
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-110506170-1"></script>
+        <script async defer>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-110506170-1');
+            gtag('config', 'AW-752255838'); 
+        </script>
+
+
+        <!-- Event snippet for Page view conversion page -->
+        <script>
+            gtag('event', 'conversion', { 'send_to': 'AW-752255838/D5QXCNCzoLkCEN6G2uYC' });
+        </script>
+
+
+
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
