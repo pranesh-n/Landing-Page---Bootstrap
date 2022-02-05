@@ -25,8 +25,6 @@
     <meta property="og:type" content="product">
     <meta property="og:image" content="images/artist-banner-md.webp">
 
-    <!-- Bootstrap Icons CSS -->
-
     <link rel="stylesheet" href="css/bundle.css">
 
     <!-- Preload Above the Fold Images-->
@@ -123,6 +121,59 @@
               }
             }
              </script>
+
+    <!-- Meta Pixel Code -->
+    <script defer async>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '890569391324545');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics (UA-110506170-1) + Adwords (AW-752255838) -->
+
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-110506170-1"></script>
+    <script async defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110506170-1');
+        gtag('config', 'AW-752255838'); 
+    </script>
+
+
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-752255838/D5QXCNCzoLkCEN6G2uYC' });
+    </script>
+
+    <!-- Event snippet for Begin checkout conversion page
+            In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-752255838/sq9fCMr5xpgDEN6G2uYC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 
 </head>
 
@@ -661,66 +712,62 @@
             style="opacity: 1; width: 50%; height: 5px; max-width: 100px;">
         <h2 class="">Choose your PR package</h2>
         <p class="lead">Choose from our most popular packages to take your music to the next level!</p>
-        <div class="row row-cols-1 row-cols-md-4 g-md-4 px-md-5 justify-content-center">
-            <div class="col">
-                <div class="card text-center border-0 border-top border-danger border-3 shadow p-3 mb-5 bg-body rounded"
-                    style="height: 500px;">
-                    <h3 class="text-danger card-title">
-                        BASIC
-                    </h3>
-                    <div class="card-body">
-                        <p class="text-muted">Get published on 6 leading news websites and blogs.</p>
-                        <p class="text-muted">Get yourself recognized globally with the high DA websites.</p>
-                        <p class="text-muted">Increase your online visibility by being promoted on professional press
-                            release.</p>
-                    </div>
-                    <div class="card-footer text-muted bg-transparent border-0">
-                        <p class="fw-bold text-danger h3">$199</p>
-                        <p class="text-muted"><span class="text-decoration-line-through">299</span>/ 35% off</p>
-                        <a class="btn btn-danger shadow bg-danger rounded" href="https://rzp.io/l/pr-basic-ads"
-                            role="button">Start Now</a>
-                    </div>
+        <div class="card-group align-items-stretch justify-content-around col-xxl-9 mx-auto">
+            <div
+                class="card text-center border-0 border-top border-danger border-3 shadow p-3 mx-md-3 mb-5 bg-body rounded">
+                <h3 class="text-danger card-title">
+                    BASIC
+                </h3>
+                <div class="card-body">
+                    <p class="text-muted">Get published on 6 leading news websites and blogs.</p>
+                    <p class="text-muted">Get yourself recognized globally with the high DA websites.</p>
+                    <p class="text-muted">Increase your online visibility by being promoted on professional press
+                        release.</p>
+                </div>
+                <div class="card-footer text-muted bg-transparent border-0">
+                    <p class="fw-bold text-danger h3">$199</p>
+                    <p class="text-muted"><span class="text-decoration-line-through">299</span>/ 35% off</p>
+                    <a class="btn btn-danger shadow bg-danger rounded" href="https://rzp.io/l/pr-basic-ads"
+                        onclick="return gtag_report_conversion('https://rzp.io/l/pr-basic-ads');" role=" button">Start
+                        Now</a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center border-0 border-top border-danger border-3 shadow p-3 mb-5 bg-body rounded"
-                    style="height: 500px;">
-                    <h3 class="text-danger card-title">
-                        INTERMEDIATE
-                    </h3>
-                    <div class="card-body">
-                        <p class="text-muted">Get published on 10 leading news websites and blogs.</p>
-                        <p class="text-muted">Get featured on our social media handles and website.</p>
-                        <p class="text-muted">Increase your reach and gather views on your song by being on the top
-                            music blogs and websites.</p>
-                    </div>
-                    <div class="card-footer text-muted bg-transparent border-0">
-                        <p class="fw-bold text-danger h3">$299</p>
-                        <p class="text-muted"><span class="text-decoration-line-through">499</span>/ 40% off</p>
-                        <a class="btn btn-danger shadow bg-danger rounded" href="https://rzp.io/l/pr-intermediate"
-                            role="button">Start Now</a>
-                    </div>
+            <div
+                class="card text-center border-0 border-top border-danger border-3 mx-md-3 shadow p-3 mb-5 bg-body rounded">
+                <h3 class="text-danger card-title">
+                    INTERMEDIATE
+                </h3>
+                <div class="card-body">
+                    <p class="text-muted">Get published on 10 leading news websites and blogs.</p>
+                    <p class="text-muted">Get featured on our social media handles and website.</p>
+                    <p class="text-muted">Increase your reach and gather views on your song by being on the top
+                        music blogs and websites.</p>
+                </div>
+                <div class="card-footer text-muted bg-transparent border-0">
+                    <p class="fw-bold text-danger h3">$299</p>
+                    <p class="text-muted"><span class="text-decoration-line-through">499</span>/ 40% off</p>
+                    <a class="btn btn-danger shadow bg-danger rounded"
+                        onclick="return gtag_report_conversion('https://rzp.io/l/pr-intermediate');"
+                        href="https://rzp.io/l/pr-intermediate" role="button">Start Now</a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center border-0 border-top border-danger border-3 shadow p-3 mb-5 bg-body rounded"
-                    style="height: 500px;">
-                    <h3 class="text-danger card-title">
-                        PRO
-                    </h3>
-                    <div class="card-body">
-                        <p class="text-muted">Get published on 15 leading news websites and blogs with high Domain
-                            Authority.</p>
-                        <p class="text-muted">Paid boost on socials to grow your social media audience.</p>
-                        <p class="text-muted">Promote your music by gaining international recognition and build a global
-                            fanbase.</p>
-                    </div>
-                    <div class="card-footer text-muted bg-transparent border-0">
-                        <p class="fw-bold text-danger h3">$749</p>
-                        <p class="text-muted"><span class="text-decoration-line-through">1499</span>/ 50% off</p>
-                        <a class="btn btn-danger shadow bg-danger rounded" href="https://rzp.io/l/pr-pro"
-                            role="button">Start Now</a>
-                    </div>
+            <div
+                class="card text-center border-0 border-top border-danger border-3 shadow p-3 mx-md-3 mb-5 bg-body rounded">
+                <h3 class="text-danger card-title">
+                    PRO
+                </h3>
+                <div class="card-body">
+                    <p class="text-muted">Get published on 15 leading news websites and blogs with high Domain
+                        Authority.</p>
+                    <p class="text-muted">Paid boost on socials to grow your social media audience.</p>
+                    <p class="text-muted">Promote your music by gaining international recognition and build a global
+                        fanbase.</p>
+                </div>
+                <div class="card-footer text-muted bg-transparent border-0">
+                    <p class="fw-bold text-danger h3">$749</p>
+                    <p class="text-muted"><span class="text-decoration-line-through">1499</span>/ 50% off</p>
+                    <a class="btn btn-danger shadow bg-danger rounded" href="https://rzp.io/l/pr-pro"
+                        onclick="return gtag_report_conversion('https://rzp.io/l/pr-pro');" role="button">Start Now</a>
                 </div>
             </div>
         </div>
@@ -838,44 +885,6 @@
             </picture>
             <p class="text-center">2021&#169; <span class="text-danger">GrooveNexus spot.light.</span></p>
         </div>
-
-        <!-- Meta Pixel Code -->
-        <script defer async>
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq) return; n = f.fbq = function () {
-                    n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                n.queue = []; t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '890569391324545');
-            fbq('track', 'PageView');
-        </script>
-        <!-- End Meta Pixel Code -->
-
-        <!-- Global site tag (gtag.js) - Google Analytics (UA-110506170-1) + Adwords (AW-752255838) -->
-
-        <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-110506170-1"></script>
-        <script async defer>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-110506170-1');
-            gtag('config', 'AW-752255838'); 
-        </script>
-
-
-        <!-- Event snippet for Page view conversion page -->
-        <script>
-            gtag('event', 'conversion', { 'send_to': 'AW-752255838/D5QXCNCzoLkCEN6G2uYC' });
-        </script>
-
-
 
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
